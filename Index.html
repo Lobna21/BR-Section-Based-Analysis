@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Duplicate Bug Reports</title>
+</head>
+<body>
+    <h1>Abstract</h1>
+    <p> Duplicate bugs pose a significant challenge that consumes substantial resources and can complicate the bug triage process, requiring extra work to
+        identify and merge duplicates, and potentially diverting attention away from
+        addressing unique, unresolved issues. Several automated duplicate bug detection methods use Natural Language Processing to handle this problem. Bug
+        reports are often long and contain multiple sections (e.g., title, description,
+        steps to reproduce, actual and expected results) that can show some textual
+        (dis)similarities. This disparity may affect the duplicate bug detection process
+        and hence results in inefficient resource utilization. In this work, we study the
+        impact of bug report sections on the detection of duplicates especially when these
+        sections show some (dis)similarities. Filtering out the most pertinent sections
+        can greatly alleviate computational load and reduce the chances of overlooking potential duplicate bugs. Using less sections would also reduce the cost of
+        the duplicate bug detection system when deploying commercial Large Language
+        Model (LLM) providers as less tokens may be used. To achieve our objective,
+        we developed and analyzed two types of models. One section-based models
+        are used to analyze the individual impact of bug report sections, whereas cross
+        section-based models are used to analyze their collective impact. These models leverage a siamese network constructed from pretrained DistilRoBERTa and
+        fine-tuned for classification by the Multi-Layer Perceptron (MLP). Our findings
+        reveal that the "title" and "description" sections show the highest relevance in
+        duplicate bug detection, achieving f1-scores of 98.93% and 98.29% respectively.
+        Conversely, the "steps to reproduce" and "actual results" sections tend to cause confusion when distinguishing between duplicate reports, which often results in
+        a high misclassification rate</p>
+        <p> </p>
+    
+    <h2>Projects</h2>
+    
+    <a href="https://github.com/Lobna21/BR-Section-Based-Analysis/tree/main/Data.zip" download>
+        <button>Download</button>
+    </a>
+    
+    <h2>Source Code</h2>
+    
+    <a href="https://github.com/Lobna21/BR-Section-Based-Analysis/tree/main/Code.zip" download>
+        <button>Download</button>
+    </a>
+</body>
+</html>
